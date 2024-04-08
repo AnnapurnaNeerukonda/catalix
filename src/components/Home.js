@@ -1,12 +1,19 @@
 import React from 'react';
 import './Home.css';
-import { Carousel } from 'react-bootstrap';
-
+import { Carousel, Card, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { BiSearch, BiX } from 'react-icons/bi'; // Add this import
 
 export default function Home() {
   return (
     <div className='container'>
       <div className='row'>
+      <div className='col-9 mx-auto '>
+            <InputGroup>
+              <InputGroup.Text><BiSearch /></InputGroup.Text>
+              <FormControl placeholder="Search..." />   
+              <InputGroup.Text><BiX /></InputGroup.Text>
+            </InputGroup>
+          </div>
         <div className='col-md-7'>
           <h3>Set-up catalix for Success</h3>
           <p>Get Catalix up to date or start your transformation by following the guide below</p>
