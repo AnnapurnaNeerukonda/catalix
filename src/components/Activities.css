@@ -1,0 +1,56 @@
+.parent{
+    margin-top: 6%;
+    margin-left: 5%;
+}
+.content {
+    position: relative;
+    font-size: 0.7rem;
+    background-color: #1a7da7;
+    width: 60px; /* Adjust the width */
+    height: 50px; /* Adjust the height */
+    color: white;
+    padding-left:10px;
+    margin-right: 1%;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px; /* Adjust the distance of the triangle from the right */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 20px; /* Adjust the width and height of the triangle */
+    border-color: transparent transparent transparent #1a7da7; /* Match the background color of the rectangle */
+  }
+
+.bi-arrow-right, .bi-clock{
+    font-size: 1.7rem;
+}  
+
+.analytics{
+    width:90%;
+    margin: auto;
+    border-width: 1px;
+    color:#064662
+}
+
+.active{
+    width:90%;
+    margin-left: 7%;
+}
+.wait-time p{
+    background-color: lightblue;
+    width:10%;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+.btn{
+    background-color: #064662;
+    color:white;
+    border-radius: 25px;
+    width:7%;
+    margin-left: 15%;
+    font-size: 0.8rem
+  }
